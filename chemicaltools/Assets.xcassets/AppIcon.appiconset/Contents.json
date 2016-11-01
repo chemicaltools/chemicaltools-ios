@@ -3,31 +3,34 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "appleicon.png",
+      "filename" : "appleicon - 副本-4.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "appleicon-3.png",
-      "scale" : "3x"
-    },
-    {
-      "size" : "29x29",
-      "idiom" : "iphone",
-      "filename" : "appleicon-2.png",
+      "filename" : "appleicon - 副本-5.png",
       "scale" : "2x"
     },
     {
-      "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "appleicon-1.png",
+      "size" : "20x20",
       "scale" : "3x"
     },
     {
-      "size" : "40x40",
+      "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "appleicon-7.png",
+      "filename" : "appleicon - 副本-3.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "29x29",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
@@ -39,67 +42,62 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "appleicon-5.png",
+      "filename" : "appleicon.png",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "appleicon-4.png",
+      "size" : "60x60",
       "scale" : "3x"
     },
     {
-      "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "appleicon-11.png",
+      "size" : "20x20",
       "scale" : "1x"
     },
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "appleicon-10.png",
+      "filename" : "appleicon - 副本.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "appleicon-9.png",
+      "filename" : "appleicon - 副本-1.png",
       "scale" : "1x"
     },
     {
+      "idiom" : "ipad",
       "size" : "29x29",
-      "idiom" : "ipad",
-      "filename" : "appleicon-8.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "appleicon-15.png",
+      "filename" : "appleicon - 副本-2.png",
       "scale" : "1x"
     },
     {
-      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "appleicon-14.png",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "appleicon-13.png",
+      "size" : "76x76",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "appleicon-12.png",
+      "filename" : "appleicon-1.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "appleicon-16.png",
+      "filename" : "appleicon-2.png",
       "scale" : "2x"
     }
   ],
