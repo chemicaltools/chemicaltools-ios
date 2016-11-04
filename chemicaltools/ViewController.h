@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController{
+    UILabel *label_element;
+    UITextField *textfield_element;
+    UIButton *button_element;
+}
+@property (nonatomic, retain) IBOutlet UILabel *label_element;
+@property (nonatomic, retain) IBOutlet UITextField *textfield_element;
+@property (nonatomic, retain) IBOutlet UIButton *button_element;
+-(IBAction)element:(id)sender;
 
 @end
 
