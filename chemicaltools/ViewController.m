@@ -30,7 +30,7 @@
 @synthesize button_element;
 @synthesize textfield_element;
 
-static NSString const *elementName[118]={
+static NSString *const elementName[118]={
     @"氢",
     @"氦",
     @"锂",
@@ -150,7 +150,7 @@ static NSString const *elementName[118]={
     @"一一七",
     @"一一八",
 };
-static NSString const *elementAbbr[118]={
+static NSString *const elementAbbr[118]={
     @"H",
     @"He",
     @"Li",
@@ -270,7 +270,7 @@ static NSString const *elementAbbr[118]={
     @"Ts",
     @"Og",
 };
-static NSString const *elementMass[118]={
+static NSString *const elementMass[118]={
     @"1.008",
     @"4.003",
     @"6.941",
@@ -390,7 +390,7 @@ static NSString const *elementMass[118]={
     @"295",
     @"293",
 };
-static NSString const *elementIUPAC[118]={
+static NSString *const elementIUPAC[118]={
     @"Hydrogen",
     @"Helium",
     @"Lithium",
@@ -510,7 +510,7 @@ static NSString const *elementIUPAC[118]={
     @"Tennessine",
     @"Oganesson",
 };
-static NSString const *elementOrigin[118]={
+static NSString *const elementOrigin[118]={
     @"Composed of the Greek elements hydro-and -gen meaning water-forming",
     @"The Greek helios, sun",
     @"The Greek lithos, stone",
@@ -642,7 +642,7 @@ static NSString const *elementOrigin[118]={
         }else if([input isEqualToString:elementIUPAC[i]]){
             n=i+1;
         }else if([input isEqualToString:[NSString stringWithFormat:@"%d",i]]){
-            n=i+1;
+            n=i;
         }
     }
     if(n>0){
