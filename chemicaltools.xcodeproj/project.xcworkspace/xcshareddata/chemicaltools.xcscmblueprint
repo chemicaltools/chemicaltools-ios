@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B2905BFD07CF7B95E9332051B59656D5F59980CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B2905BFD07CF7B95E9332051B59656D5F59980CF" : 9223372036854775807,
+    "E55CF83B90BF31E6ED4660B04513F3BFED9CBB8E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "02BBEA61-FF05-4A0F-AD75-31A9AFF38EF0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B2905BFD07CF7B95E9332051B59656D5F59980CF" : "chemicaltools\/",
+    "E55CF83B90BF31E6ED4660B04513F3BFED9CBB8E" : "chemicaltools\/leancloud-objc-sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "chemicaltools",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "chemicaltools.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:njzjz\/Chemical-Tools-for-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2905BFD07CF7B95E9332051B59656D5F59980CF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/leancloud\/objc-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E55CF83B90BF31E6ED4660B04513F3BFED9CBB8E"
+    }
+  ]
+}

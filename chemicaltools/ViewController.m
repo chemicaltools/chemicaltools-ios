@@ -17,7 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
+    //[testObject setObject:@"bar" forKey:@"foo"];
+    //[testObject save];
+    
     label_element.numberOfLines=0;
+    AVUser *currentUser = [AVUser currentUser];
+    if (currentUser != nil) {
+        NSString *historyelement = [AVUser currentUser][@"historyElementOutput"];
+        label_element.text=historyelement;
+    }
 }
 
 
@@ -29,6 +38,8 @@
 @synthesize label_element;
 @synthesize button_element;
 @synthesize textfield_element;
+@synthesize textfield_username;
+@synthesize textfield_password;
 
 static NSString *const elementName[118]={
     @"氢",
@@ -646,9 +657,38 @@ static NSString *const elementOrigin[118]={
         }
     }
     if(n>0){
-        label_element.text=[NSString stringWithFormat:@"元素名称：%@\n元素符号：%@\nIUPAC名：%@\n原子序数：%@\n相对原子质量：%@\n元素名称含义：%@", elementName[n-1], elementAbbr[n-1],elementIUPAC[n-1], [NSString stringWithFormat:@"%d",n],elementMass[n-1],elementOrigin[n-1]];
+        NSString *output=[NSString stringWithFormat:@"元素名称：%@\n元素符号：%@\nIUPAC名：%@\n原子序数：%@\n相对原子质量：%@\n元素名称含义：%@", elementName[n-1], elementAbbr[n-1],elementIUPAC[n-1], [NSString stringWithFormat:@"%d",n],elementMass[n-1],elementOrigin[n-1]];
+        label_element.text=output;
+        NSString *outputhtml=[NSString stringWithFormat:@"元素名称：%@\n元素符号：%@\nIUPAC名：%@\n原子序数：%@\n相对原子质量：%@\n元素名称含义：%@\n<a href='https://en.wikipedia.org/wiki/%@'>访问维基百科</a>", elementName[n-1], elementAbbr[n-1],elementIUPAC[n-1], [NSString stringWithFormat:@"%d",n],elementMass[n-1],elementOrigin[n-1],elementIUPAC[n-1]];
+        [[AVUser currentUser] setObject:input forKey:@"historyElement"];
+        [[AVUser currentUser] setObject:[NSString stringWithFormat:@"%d",n] forKey:@"historyElementNumber"];
+        [[AVUser currentUser] setObject:output forKey:@"historyElementOutput"];
+        [[AVUser currentUser] setObject:outputhtml forKey:@"historyElementOutputHtml"];
+        [[AVUser currentUser] saveInBackground];
     }else{
         label_element.text=NSLocalizedString(@"wrong",nil);
     }
+}
+-(IBAction)login:(id)sender{
+    NSString *username=textfield_username.text;
+    NSString *password=textfield_password.text;
+    
+    [AVUser logInWithUsernameInBackground:username password:password block:^(AVUser *user, NSError *error) {
+        if (user != nil) {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"成功" message:@"登陆成功！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            }];
+            [alert addAction:action1];
+            [self presentViewController:alert animated:YES completion:^{
+            }];        } else {
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"错误" message:@"用户名或密码错误！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            }];
+            [alert addAction:action1];
+            [self presentViewController:alert animated:YES completion:^{
+            }];
+        }
+    }];
+    
 }
 @end
