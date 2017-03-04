@@ -1,9 +1,9 @@
 
 /* Class = "UIButton"; normalTitle = "Search"; ObjectID = "4so-7g-H40"; */
-"4so-7g-H40.normalTitle" = "查询";
+"4so-7g-H40.normalTitle" = "Search";
 
 /* Class = "UILabel"; text = "Welcome to search for elements."; ObjectID = "CNx-4a-3JH"; */
-"CNx-4a-3JH.text" = "欢迎使用元素查询！";
+"CNx-4a-3JH.text" = "Welcome to search for elements.";
 
 /* Class = "UIButton"; normalTitle = "元素查询"; ObjectID = "CbS-Gf-DZm"; */
-"CbS-Gf-DZm.normalTitle" = "元素查询";
+"CbS-Gf-DZm.normalTitle" = "Search elements";

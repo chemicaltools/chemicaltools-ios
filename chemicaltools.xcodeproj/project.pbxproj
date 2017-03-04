@@ -18,6 +18,7 @@
 		222A4B7B1DC92BB6002F9EE5 /* chemicaltoolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222A4B7A1DC92BB6002F9EE5 /* chemicaltoolsUITests.m */; };
 		222A4B8C1DC93344002F9EE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222A4B8E1DC93344002F9EE5 /* InfoPlist.strings */; };
 		22C7E7D11DCCFBE600E0651E /* array.xml in Resources */ = {isa = PBXBuildFile; fileRef = 22C7E7D01DCCFBE600E0651E /* array.xml */; };
+		C8A27ABE1E6B3204007AEE58 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8A27AC01E6B3204007AEE58 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +56,14 @@
 		222A4B761DC92BB6002F9EE5 /* chemicaltoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chemicaltoolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222A4B7A1DC92BB6002F9EE5 /* chemicaltoolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chemicaltoolsUITests.m; sourceTree = "<group>"; };
 		222A4B7C1DC92BB6002F9EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		222A4B881DC93294002F9EE5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		222A4B891DC93294002F9EE5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		222A4B8D1DC93344002F9EE5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		222A4B8F1DC93347002F9EE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22C7E7D01DCCFBE600E0651E /* array.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = array.xml; sourceTree = "<group>"; };
+		C8A27AB91E6B2F8E007AEE58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C8A27ABB1E6B303A007AEE58 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		C8A27ABF1E6B3204007AEE58 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C8A27AC11E6B3269007AEE58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				222A4B521DC92BB6002F9EE5 /* Supporting Files */,
 				222A4B8E1DC93344002F9EE5 /* InfoPlist.strings */,
 				22C7E7D01DCCFBE600E0651E /* array.xml */,
+				C8A27AC01E6B3204007AEE58 /* Localizable.strings */,
 			);
 			path = chemicaltools;
 			sourceTree = "<group>";
@@ -214,7 +219,7 @@
 		222A4B471DC92BB6002F9EE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "曾晋哲";
 				TargetAttributes = {
 					222A4B4E1DC92BB6002F9EE5 = {
@@ -243,6 +248,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 222A4B461DC92BB6002F9EE5;
 			productRefGroup = 222A4B501DC92BB6002F9EE5 /* Products */;
@@ -262,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				222A4B651DC92BB6002F9EE5 /* LaunchScreen.storyboard in Resources */,
+				C8A27ABE1E6B3204007AEE58 /* Localizable.strings in Resources */,
 				222A4B8C1DC93344002F9EE5 /* InfoPlist.strings in Resources */,
 				222A4B621DC92BB6002F9EE5 /* Assets.xcassets in Resources */,
 				222A4B5D1DC92BB6002F9EE5 /* Main.storyboard in Resources */,
@@ -333,7 +340,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				222A4B5C1DC92BB6002F9EE5 /* Base */,
-				222A4B881DC93294002F9EE5 /* zh-Hans */,
+				C8A27AB91E6B2F8E007AEE58 /* en */,
+				C8A27ABB1E6B303A007AEE58 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -354,6 +362,15 @@
 				222A4B8F1DC93347002F9EE5 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C8A27AC01E6B3204007AEE58 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8A27ABF1E6B3204007AEE58 /* zh-Hans */,
+				C8A27AC11E6B3269007AEE58 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -378,6 +395,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -427,6 +445,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -457,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC5NEWF3XG;
 				INFOPLIST_FILE = chemicaltools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzjz.chemicaltools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,6 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC5NEWF3XG;
 				INFOPLIST_FILE = chemicaltools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzjz.chemicaltools;
 				PRODUCT_NAME = "$(TARGET_NAME)";

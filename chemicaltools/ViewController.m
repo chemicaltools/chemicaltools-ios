@@ -648,7 +648,7 @@ static NSString *const elementOrigin[118]={
     if(n>0){
         label_element.text=[NSString stringWithFormat:@"元素名称：%@\n元素符号：%@\nIUPAC名：%@\n原子序数：%@\n相对原子质量：%@\n元素名称含义：%@", elementName[n-1], elementAbbr[n-1],elementIUPAC[n-1], [NSString stringWithFormat:@"%d",n],elementMass[n-1],elementOrigin[n-1]];
     }else{
-        label_element.text=@"wrong";
+        label_element.text=NSLocalizedString(@"wrong",nil);
     }
 }
 @end
