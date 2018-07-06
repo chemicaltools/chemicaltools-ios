@@ -12,8 +12,6 @@ Essential tools for chemistry students on iOS.
 [Official Website](https://chem.njzjz.win/)
 
 ## Packages used
-* [Translater.js](https://github.com/jaywcjlove/translater.js)
-* [Pinyin.js](https://github.com/huntbao/pinyin/)
 * [LeanCloud Object-C SDK](https://releases.leanapp.cn/#/leancloud/objc-sdk/releases)
 
 ## Awards
