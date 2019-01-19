@@ -1,4 +1,4 @@
 language: objective-c
 script:
-  - xctool -workspace chemicaltools.xcworkspace -scheme chemicaltools -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace chemicaltools.xcworkspace -scheme chemicaltoolsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool -workspace chemicaltools.xcodeproj/project.xcworkspace -scheme chemicaltools -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace chemicaltools.xcodeproj/project.xcworkspace -scheme chemicaltoolsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
